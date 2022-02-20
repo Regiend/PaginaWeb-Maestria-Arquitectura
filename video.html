@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Pagina Maestría</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo_small_icon_only.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="http://fonts.cdnfonts.com/css/beach-party-cartoon" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/cartoon-riot" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+            <!-- a[href="#"]{inicio}*5-->
+            <li><a href="index.html"><i class="fas fa-home"></i> INICIO </a></li>
+            <li><a href="quiensomos.html"><i class="fas fa-user"></i></i> QUIENES SOMOS</a></li>
+            <li><a href="galeria.html"><i class="far fa-image"></i> GALERIA</a></li>
+            <li><a href="video.html"><i class="fas fa-play-circle"></i> VIDEOS</a></li>
+            <li><a href="contacto.html"><i class="fas fa-envelope"></i> CONTACTANOS</a></li>
+            </ul>
+        </nav>
+        <!--section.textos-header-->
+            <section class="textos-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/B1.jpg" alt="">
+                        </a>
+                </div>
+            
+        </section>
+        <!--Efecto olas ir al sitio web-->
+    </header>
+        <section class="ContenedorG-Videos">
+        <div align="center"><img src="img/videos.jpg" alt="" height="252" width="=260"></div><br>
+    <div class="container">
+        <div class="main-video">
+            <div class="video">
+                
+                <video src="media/PROYECTO ARMA.mp4" controls muted ></video>
+                <h3 class="title">01. Mazo de guerra Tyranitar</h3>
+            </div>
+        </div>
+        <div class="video-list">
+            <div class="vid active">
+                <video src="media/PROYECTO ARMA.mp4" controls muted></video>
+                <h3 class="title">01. Mazo de guerra Tyranitar</h3>
+            </div>
+            <div class="vid">
+                <video src="media/1 ANIMATIC.mp4" controls muted></video>
+                <h3 class="title">02. Animatic Regis</h3>
+            </div>
+            <div class="vid">
+                <video src="media/ANIMATIC.mp4" controls muted></video>
+                <h3 class="title">03. Among Us x Fall Guys</h3>
+            </div>
+        </div>
+    </div>
+    <script>
+        let listVideo= document.querySelectorAll('.video-list .vid');
+        let mainVideo= document.querySelector('.main-video video');
+        let title= document.querySelector('.main-video .title');
+        listVideo.forEach(video =>{
+            video.onclick= () =>{
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src=src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML=text;
+                }
+            };
+        });
+    </script>
+    </section>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <a href="https://www.facebook.com/Mega-Animation-106290048655477">
+                <img src="img/facebook.png" alt="">
+                </a>
+                <h4>Facebook</h4>
+            </div>
+            <div class="content-foo">
+                <a href="https://www.youtube.com/channel/UCYt7fG9jpU0xC3T6DIA6yig">
+                <img src="img/youtube.png" alt="">
+                </a>
+                <h4>Youtube</h4>
+            </div>
+            <div class="content-foo">
+                <a href="https://www.instagram.com/mega.animation07/?hl=es">
+                <img src="img/instagram.png" alt="">
+                </a>
+                <h4>Instagram</h4>
+            </div>
+            <div class="content-foo">
+                <a href="https://regiend.cgsociety.org/">
+                <img src="img/cgs.png" alt="">
+                </a>
+                <h4>CGSociety</h4>
+            </div>
+            <div class="content-foo">
+                <img src="img/correo.png" alt="">
+                <h4>megaanimation07@outlook.com</h4>
+            </div>
+            <div class="content-foo">
+                <img src="img/telefono.png" alt="">
+                <h4>55-78-99-30-42</h4>
+            </div>
+        </div>
+
+        <h2 class="titulo-final">&copy; Maestría Unitec</h2>
+    </footer>
+</body>
+</html>
