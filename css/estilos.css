@@ -1,0 +1,473 @@
+/*Quitamos la separacion de la pagina*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Cartoon Riot', sans-serif;
+
+}
+
+/*Todas las clases hablamos de los contenedores*/
+
+.contenedor{
+    
+    padding:60px 0;
+    /*los bordes de arriba y abajo que tengan 60 pixeles*/
+    width: 90%;
+    max-width: 1000px;
+    /*que tenga un margen grande*/
+    margin: auto;
+    /*centre todo dentro del contenedor*/
+    overflow: hidden;
+    /*si la imagen se sale del contenedor que lo esconda*/
+
+    }
+
+.titulo{
+    color:rgb(69, 23, 90);
+    font-size: 30px;
+    /*el tamaño de la letra*/
+    text-align: center;
+    margin-bottom: 60px;
+    /*distinguir los titulos de cada seccion*/
+}
+
+/*Header*/
+
+header{
+width:  100%;
+height: 400px;
+background: url(../img/baner2.jpg);
+/*es la ruta para insertar una imagen de fondo*/
+background-size: cover;
+background: attachments;
+position: relative;
+
+/*que se quede bloqueada la imagen*/
+}
+
+/*nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav>a{
+    color: rgb(212, 212, 212);
+    font-weight:300;
+    
+    text-decoration: none;
+    
+    font-size: 20px;
+    margin-right: 10px;
+    
+
+}
+
+nav>a:hover{
+    color: rgb(3, 48, 197);
+    text-decoration: underline;
+    
+}*/
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	list-style: none;
+	padding: 0;
+	background: #331E53;
+	width: 100%;
+	max-width: 4000px;
+	margin: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.menu li a{
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 4px solid #9c6ce6;
+    border-right: 4px solid #9c6ce6;
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+    /*padding-left: 50px;
+    padding-right: 50px;*/
+	display: block;
+}
+
+.menu li{
+    padding-left: 100px;
+    padding-right: 100px;
+    	display: inline-block;
+	text-align: center;
+}
+
+.menu li a:hover{
+    	background: #54beef;
+}
+
+
+
+
+main .contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: top;
+    
+}
+
+/* ------------------------- */
+/* Estilos CSS del Reproductor */
+/* ------------------------- */
+.fm-video {
+	width: 100%;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,.5);
+}
+
+.fm-video .vjs-control-bar {
+	background: #000000;
+	color: #55adf1;
+}
+
+.fm-video .vjs-play-progress,
+.fm-video .vjs-volume-level {
+	background: #1d87d8;
+}
+
+.fm-video .vjs-slider {
+	background: #3d85bd;
+}
+
+.video-js:hover .vjs-big-play-button {
+	background: rgba(0,0,0,.2);
+}
+
+.fm-video .vjs-big-play-button {
+	background: rgba(0,0,0,.2);
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 100%;
+	border:none;
+}
+
+.fm-video .vjs-big-play-button:hover {
+	background: rgba(0,0,0,.5);
+}
+
+
+@media screen and (max-width: 600px) {
+	header {
+		position: relative;
+		height: auto;
+	}
+
+	main {
+		margin-top: 50px;
+	}
+}
+
+.conquien .titulo{
+    padding-top: 50px;
+    border-bottom: 10px solid #331E53;
+}
+
+
+.textos-header .logo{
+    display: flex;
+}
+
+.textos-header .logo img{
+    margin-left: 15px;
+    padding: 20px 20px 20px 20px;
+    height: 350px;
+}
+ 
+.tarjetas{
+    padding-top: 50px;
+    padding-left: 270px;
+    text-decoration: none;
+    padding-bottom: 60px;
+}
+article{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    text-decoration: none;
+}
+.tarjetas .tarjeta{
+    padding-top: 20px;
+    background-color: #9c6ce6;
+    align-items: center;
+    display: inline-block;
+    justify-content: space-evenly;
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 20%;
+    text-decoration: none;
+}
+.tarjetas .tarjeta img{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border: #331E53 10px solid;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.tarjetas .tarjeta h2{
+    font-family: 'Balsamiq Sans', cursive;
+    color: #e7e7e7;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    border-bottom: 10px solid #331E53;
+    padding-bottom: 20px;
+}
+
+.tarjetas .tarjeta p{
+    font-family: 'Balsamiq Sans', cursive;
+    color: #e7e7e7;
+    text-align: justify;
+    font-size: 1em;
+    text-decoration: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.tarjeta:hover{
+    border: #9c6ce6 1px solid;
+    margin: 5px;
+    width: 40%;
+    cursor: pointer;
+    
+
+}
+
+
+.contenedor-sobre-nosotros{
+    
+    display: flex;
+    justify-content: space-evenly;
+    /*repartir el espacio*/
+}
+
+
+.sobre-nosotros- .contenedor-textos{
+    width: 45%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: hotpink;
+    color:ivory;
+    border-radius: 50;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-right: 10px;
+
+    
+}
+.contenido-textos p{
+    padding: 0 0 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*galeria*/
+
+.portafolio{
+    background: rgb(180, 36, 216);
+    
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /*para que no se junten todas las fotos*/
+}
+
+.image-about-us{
+    width: 45%;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.imagen-port>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*para cuando tenemos un poco error*/
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: crimson;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+    
+}
+
+.hover-galeria p{
+    color: rgb(231, 231, 231);
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background-color: rgb(202, 29, 218);
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5x;
+    }
+
+    .cards .card> .contenido-texto-card{
+        width: 60%;
+        color: rgb(253, 253, 253);
+    }
+
+    .cards .card img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid rgb(134, 11, 11);
+}
+
+.about-services{
+    background: rgb(255, 255, 255);
+    padding-bottom: 30px;
+    padding-top: 70px;
+}
+
+.servicios-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    padding-top: 50px;
+    width: 250px;
+}
+
+.servicio-ind h3{
+    font-size: 30px;
+    padding-top: 20px;
+    margin: 10x 0;
+    border-bottom: 4px solid #331E53;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*Footer*/
+
+footer{
+    background: #8254A1;
+    padding: 60px 0 30 px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    padding-top: 20px;
+    border-top: 10px solid #331E53;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 10px solid #331E53;
+}
+
+.content-foo img{
+    display: flex;
+    width: 50px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content-foo h4{
+    letter-spacing: 2px;
+    text-transform: none;
+    font-family: 'Balsamiq Sans', cursive;
+    padding-top: 10px;
+    color: blanchedalmond;
+    border-bottom: 4px solid #331E53;
+    padding-bottom: 10x;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content-foo p{
+    color: rgb(255, 255, 255);
+
+}
+
+.titulo-final{
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    font-size: 25px;
+    color: azure;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
